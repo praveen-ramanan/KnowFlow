@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KnowFlow | Premium AI morning tech briefing</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="KnowFlow is an AI-powered personalized knowledge platform delivering high-fidelity technology briefs, cloud insights, software engineering updates, and career watching resources every morning.">
+  <meta name="keywords" content="AI, Technology, Cloud Computing, GitHub Trending, Research papers, software engineering briefs">
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       LANDING PAGE VIEW
+       ========================================== -->
+  <div id="landing-view">
+    <!-- Landing Navigation -->
+    <nav class="landing-nav glass">
+      <div class="logo">
+        <div class="logo-mark"><i class="fa-solid fa-infinity"></i></div>
+        <span>KnowFlow</span>
+      </div>
+      <div class="landing-menu">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#categories">Categories</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div>
+        <button class="btn btn-primary" onclick="navigateTo('dashboard')">Launch App</button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="hero-badge">
+        <i class="fa-solid fa-wand-magic-sparkles"></i> Personalized AI Briefings
+      </div>
+      <h1>KnowFlow</h1>
+      <p class="hero-tagline">Knowledge. Curated. Personalized. Every Morning.</p>
+      <p class="hero-desc">
+        Receive an AI-powered personalized morning briefing covering technology, artificial intelligence, cloud computing, GitHub trends, research papers, learning recommendations, and career opportunities—all tailored to your interests.
+      </p>
+      <div class="hero-buttons">
+        <button id="get-started-btn" class="btn btn-primary">Get Started <i class="fa-solid fa-chevron-right"></i></button>
+        <button id="view-demo-btn" class="btn btn-secondary">View Demo</button>
+      </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+      <h2 class="section-title">Engage Your Mind, Intelligently</h2>
+      <p class="section-subtitle">A premium personal reading dashboard built for engineers, students, and technical learners.</p>
+      <div class="features-grid">
+        <div class="feature-card glass">
+          <div class="feature-icon"><i class="fa-solid fa-brain"></i></div>
+          <h3>AI-Powered Summaries</h3>
+          <p>Get straight to the core of complex technology releases. Outlines, key takeaways, and why it matters to your work.</p>
+        </div>
+        <div class="feature-card glass">
+          <div class="feature-icon"><i class="fa-solid fa-sliders"></i></div>
+          <h3>Hyper Personalized</h3>
+          <p>Configure your topics, delivery times, and depth settings. Only read what fits your career goals.</p>
+        </div>
+        <div class="feature-card glass">
+          <div class="feature-icon"><i class="fa-solid fa-newspaper"></i></div>
+          <h3>Elegant Layouts</h3>
+          <p>Ditch cluttered feeds. Read in a gorgeous vintage digital newspaper format designed to match your morning coffee.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
+      <h2 class="section-title">How KnowFlow Works</h2>
+      <p class="section-subtitle">From raw engineering updates to personalized insights in three simple steps.</p>
+      <div class="steps-container">
+        <div class="step-item">
+          <div class="step-number">1</div>
+          <h3>Connect Interest Sources</h3>
+          <p>Select your favorite domains, technologies, repositories, and learning targets.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">2</div>
+          <h3>AI Synthesis</h3>
+          <p>Every night, AI pipelines process thousands of research papers, repositories, and tech feeds into high-fidelity summaries.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">3</div>
+          <h3>Morning Delivery</h3>
+          <p>Open your personalized briefing dashboard or download your briefing as a compact, print-ready PDF at 7:00 AM.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Showcase -->
+    <section id="categories" class="categories-section">
+      <h2 class="section-title">Knowledge Streams Covered</h2>
+      <p class="section-subtitle">Deep vertical insights across critical technological sectors.</p>
+      <div class="categories-showcase">
+        <div class="category-card glass" onclick="navigateTo('vault')">
+          <i class="fa-solid fa-robot"></i>
+          <span>Artificial Intelligence</span>
+        </div>
+        <div class="category-card glass" onclick="navigateTo('vault')">
+          <i class="fa-solid fa-cloud"></i>
+          <span>Cloud Computing</span>
+        </div>
+        <div class="category-card glass" onclick="navigateTo('vault')">
+          <i class="fa-solid fa-code"></i>
+          <span>Programming</span>
+        </div>
+        <div class="category-card glass" onclick="navigateTo('vault')">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span>Cybersecurity</span>
+        </div>
+        <div class="category-card glass" onclick="navigateTo('vault')">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>Research Papers</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why KnowFlow Section -->
+    <section class="why-section">
+      <div class="why-grid">
+        <div class="why-visual">
+          <div class="why-mock-card glass">
+            <span class="badge badge-ai" style="margin-bottom: 8px;">AI BRIEF</span>
+            <h4 style="margin-bottom: 6px;">Direct Preference Optimization (DPO)</h4>
+            <p style="font-size: 0.8rem; color: var(--text-secondary);">Direct mathematical modeling replaces the complex PPO feedback loops in alignment...</p>
+          </div>
+          <div class="why-mock-card glass" style="align-self: flex-end; width: 80%;">
+            <div style="display: flex; gap: 8px; align-items: center;">
+              <i class="fa-solid fa-fire" style="color: var(--warning);"></i>
+              <span style="font-weight: 700; font-size: 0.85rem;">Daily Streak: 5 Days</span>
+            </div>
+          </div>
+        </div>
+        <div class="why-list">
+          <h2 class="section-title" style="text-align: left; margin-bottom: 8px;">Built for the High-Agency Engineer</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 24px;">Don't get overwhelmed by information flood. Get curated, actionable facts.</p>
+          <div class="why-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <div>
+              <h4>No Ad Trackers, No Clickbaits</h4>
+              <p>Just purely structured technical insights written to save time and promote knowledge building.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <div>
+              <h4>Gamified Streaks & Progress Logs</h4>
+              <p>Keep track of your technical learning habits and watch your structured index grow over time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-subtitle">Everything you need to know about the KnowFlow briefing engine.</p>
+      <div class="faq-container">
+        <div class="faq-item glass">
+          <div class="faq-question">
+            <span>Where does the data come from?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            KnowFlow connects to premium RSS feeds, developer news boards (like Hacker News), academic archives (arXiv), trending GitHub networks, and industry blog updates.
+          </div>
+        </div>
+        <div class="faq-item glass">
+          <div class="faq-question">
+            <span>How does the personalization work?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            In your preferences pane, specify the exact topics you care about. A local AI classifier parses the daily corpus to build your custom feed.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="landing-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-mark"><i class="fa-solid fa-infinity"></i></div>
+            <span>KnowFlow</span>
+          </div>
+          <p>Knowledge. Curated. Personalized. Every Morning.</p>
+          <p style="font-size: 0.85rem; margin-top: 8px; color: var(--text-secondary);">Built by <strong>Praveen Ramanan K</strong></p>
+        </div>
+        <div class="footer-links">
+          <h4>Project</h4>
+          <ul>
+            <li><a href="https://github.com" target="_blank">GitHub</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#docs">Documentation</a></li>
+            <li><a href="#privacy">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Version v1.0</span>
+        <span>&copy; 2026 Praveen Ramanan K. All rights reserved.</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ==========================================
+       MAIN DASHBOARD APPLICATION SHELL
+       ========================================== -->
+  <div id="app-view">
+    <!-- Sidebar Navigation -->
+    <aside class="app-sidebar">
+      <div class="sidebar-header">
+        <div class="logo" onclick="navigateTo('landing')" style="cursor: pointer;">
+          <div class="logo-mark"><i class="fa-solid fa-infinity"></i></div>
+          <span>KnowFlow</span>
+        </div>
+      </div>
+      <nav class="sidebar-menu">
+        <div class="sidebar-link active" data-view="dashboard">
+          <i class="fa-solid fa-chart-pie"></i>
+          <span>Dashboard</span>
+        </div>
+        <div class="sidebar-link" data-view="daily-brief">
+          <i class="fa-solid fa-file-invoice"></i>
+          <span>Daily Brief</span>
+        </div>
+        <div class="sidebar-link" data-view="vault">
+          <i class="fa-solid fa-box-archive"></i>
+          <span>Knowledge Vault</span>
+        </div>
+        <div class="sidebar-link" data-view="analytics">
+          <i class="fa-solid fa-chart-line"></i>
+          <span>Analytics</span>
+        </div>
+        <div class="sidebar-link" data-view="preferences">
+          <i class="fa-solid fa-sliders"></i>
+          <span>Preferences</span>
+        </div>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="user-profile-summary" onclick="navigateTo('preferences')">
+          <div class="avatar">PR</div>
+          <div class="user-info">
+            <span class="user-name">Praveen Ramanan K</span>
+            <span class="user-role">AI & Data Science Student</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Container -->
+    <main class="app-main">
+      <!-- Top Navigation -->
+      <header class="app-header">
+        <div class="search-container">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="global-search" placeholder="Search across briefing feeds...">
+        </div>
+        <div class="header-actions">
+          <button class="btn-icon" title="Notifications" onclick="showToast('Your notification inbox is up to date!', 'info')">
+            <i class="fa-regular fa-bell"></i>
+          </button>
+          <button class="btn-icon" id="theme-toggle-btn" title="Toggle Light/Dark Theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <button class="btn btn-secondary" onclick="navigateTo('landing')">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i> Exit
+          </button>
+        </div>
+      </header>
+
+      <!-- Viewports -->
+      <div class="app-content">
+
+        <!-- 1. Dashboard View -->
+        <div id="dashboard-view" class="view-container active">
+          <div class="view-header">
+            <div>
+              <h2 id="greeting-txt">Good Morning, Praveen</h2>
+              <p>Here is your knowledge overview for today.</p>
+            </div>
+            <div>
+              <span id="reading-time-est" style="font-size: 0.9rem; font-weight: 600; color: var(--text-secondary);"></span>
+            </div>
+          </div>
+
+          <!-- Stats Widgets -->
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-header">
+                <span>ARTICLES PROCESSED</span>
+                <i class="fa-solid fa-paperclip"></i>
+              </div>
+              <div class="stat-value" id="stat-articles-today">0</div>
+              <div class="stat-desc">Refreshed 2 hours ago</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-header">
+                <span>AI HIGHLIGHTS</span>
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <div class="stat-value" id="stat-ai-concepts">0</div>
+              <div class="stat-desc">Categorized under Smart Feeds</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-header">
+                <span>RESEARCH PAPERS</span>
+                <i class="fa-solid fa-book-open"></i>
+              </div>
+              <div class="stat-value" id="stat-research-papers">0</div>
+              <div class="stat-desc">New papers processed from arXiv</div>
+            </div>
+          </div>
+
+          <!-- Dashboard Core Layout Split -->
+          <div class="dashboard-sections">
+            <!-- Left Side: Article Streams -->
+            <div>
+              <div class="section-group-title"><i class="fa-solid fa-bolt" style="color: var(--warning);"></i> Top Headlines</div>
+              <div class="articles-stack" id="headlines-stack">
+                <!-- Skeleton loaders -->
+                <div class="article-card">
+                  <div class="skeleton skeleton-title"></div>
+                  <div class="skeleton skeleton-text"></div>
+                  <div class="skeleton skeleton-text" style="width: 60%;"></div>
+                </div>
+              </div>
+
+              <!-- General Streams -->
+              <div id="category-stacks"></div>
+            </div>
+
+            <!-- Right Side: Side widgets -->
+            <aside class="dashboard-aside">
+              <!-- Tool of the day -->
+              <div class="aside-card tool-card">
+                <div style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--primary);">Tool of the Day</div>
+                <div id="tool-of-the-day-widget"></div>
+              </div>
+
+              <!-- Tasks Checklist -->
+              <div class="aside-card">
+                <h3>Learn Today</h3>
+                <div class="learn-today-list" id="learn-today-list-widget"></div>
+              </div>
+
+              <!-- Long Read Widget -->
+              <div class="aside-card" style="padding: 0; overflow: hidden; border: none;">
+                <div id="long-read-widget"></div>
+              </div>
+            </aside>
+          </div>
+        </div>
+
+        <!-- 2. Daily Brief Newspaper View -->
+        <div id="daily-brief-view" class="view-container">
+          <div class="view-header">
+            <div>
+              <h2>Daily Brief</h2>
+              <p>Your tailored morning paper format.</p>
+            </div>
+            <div class="brief-actions">
+              <button class="btn btn-secondary" id="btn-print-brief">
+                <i class="fa-solid fa-file-pdf"></i> Download PDF
+              </button>
+            </div>
+          </div>
+
+          <div class="newspaper-wrapper">
+            <header class="newspaper-header">
+              <div class="newspaper-title">The KnowFlow Gazette</div>
+              <div class="newspaper-meta">
+                <span>Personalized Tech Edition</span>
+                <span id="brief-date">July 18, 2026</span>
+                <span>Morning Release</span>
+              </div>
+            </header>
+
+            <div class="quote-box">
+              <span id="brief-quote-text"></span>
+              <div id="brief-quote-author" style="text-align: right; margin-top: 4px; font-weight: bold;"></div>
+            </div>
+
+            <div class="newspaper-columns">
+              <!-- Main column for editorial text -->
+              <div class="newspaper-main-col" id="brief-articles-container"></div>
+              
+              <!-- Side column for briefs -->
+              <div>
+                <div class="newspaper-section">
+                  <h4 class="newspaper-section-title">Tech Indicators</h4>
+                  <div style="font-size: 0.85rem; line-height: 1.8;">
+                    <div style="display: flex; justify-content: space-between; border-bottom: 1px dotted #ccc;">
+                      <span>NASDAQ Tech Index</span>
+                      <strong>+1.42%</strong>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; border-bottom: 1px dotted #ccc;">
+                      <span>Total Active repos (24h)</span>
+                      <strong>24,194</strong>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                      <span>arXiv AI Submissions</span>
+                      <strong>114 papers</strong>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="newspaper-section" style="margin-top: 40px;">
+                  <h4 class="newspaper-section-title">Brief Highlights</h4>
+                  <p style="font-size: 0.8rem; font-style: italic; line-height: 1.5; color: var(--text-secondary);">
+                    This edition was synthetically compiled by KnowFlow AI agent pipeline based on your subscription tags.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Knowledge Vault View -->
+        <div id="vault-view" class="view-container">
+          <div class="view-header">
+            <div>
+              <h2>Knowledge Vault</h2>
+              <p>Store and search every article processed.</p>
+            </div>
+          </div>
+
+          <div class="vault-controls">
+            <div class="vault-search-row">
+              <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="vault-search" placeholder="Filter vault by keyword, tag or source..." oninput="renderVault()">
+              </div>
+            </div>
+            
+            <div class="vault-filters">
+              <span class="chip active" data-cat="all">All Items</span>
+              <span class="chip" data-cat="saved"><i class="fa-solid fa-bookmark"></i> Saved Articles</span>
+              <span class="chip" data-cat="Artificial Intelligence">Artificial Intelligence</span>
+              <span class="chip" data-cat="Cloud Computing">Cloud Computing</span>
+              <span class="chip" data-cat="Programming">Programming</span>
+              <span class="chip" data-cat="Cybersecurity">Cybersecurity</span>
+              <span class="chip" data-cat="Research Papers">Research Papers</span>
+              <span class="chip" data-cat="Startups">Startups</span>
+              <span class="chip" data-cat="Career & Placement Watch">Career Watch</span>
+            </div>
+          </div>
+
+          <div class="vault-grid" id="vault-grid"></div>
+          
+          <div class="pagination" id="vault-pagination"></div>
+        </div>
+
+        <!-- 4. Analytics View -->
+        <div id="analytics-view" class="view-container">
+          <div class="view-header">
+            <div>
+              <h2>Analytics & Insights</h2>
+              <p>Track your technology readings and progress metrics.</p>
+            </div>
+          </div>
+
+          <!-- Top Analytics Stats -->
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-header">
+                <span>READING STREAK</span>
+                <i class="fa-solid fa-fire" style="color: var(--warning);"></i>
+              </div>
+              <div class="stat-value" id="analytics-streak-val">0</div>
+              <div class="stat-desc">Consecutive days active</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-header">
+                <span>TOTAL ARTICLES READ</span>
+                <i class="fa-solid fa-book-open"></i>
+              </div>
+              <div class="stat-value" id="analytics-total-read">0</div>
+              <div class="stat-desc">Since onboarding</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-header">
+                <span>FAVORITE CATEGORY</span>
+                <i class="fa-solid fa-heart" style="color: var(--error);"></i>
+              </div>
+              <div class="stat-value" id="analytics-fav-topic" style="font-size: 1.2rem; padding: 6px 0;">AI</div>
+              <div class="stat-desc">Most interactive tag</div>
+            </div>
+          </div>
+
+          <!-- Analytics Charts -->
+          <div class="analytics-grid">
+            <div class="chart-card">
+              <h3>Weekly Activity</h3>
+              <div class="chart-container" id="weekly-activity-chart"></div>
+            </div>
+            <div class="chart-card">
+              <h3>Category Distribution</h3>
+              <div class="chart-container" id="category-dist-chart"></div>
+            </div>
+            <div class="chart-card">
+              <h3>Learning Progress (Skill Score)</h3>
+              <div class="chart-container" id="learning-progress-chart"></div>
+            </div>
+            <!-- Streak Calendar cell container -->
+            <div class="chart-card" style="display: flex; flex-direction: column; justify-content: center;">
+              <h3 style="text-align: center;">Weekly Consistency</h3>
+              <div class="streak-calendar" id="streak-calendar-grid"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Preferences View -->
+        <div id="preferences-view" class="view-container">
+          <div class="view-header">
+            <div>
+              <h2>Settings & Customizations</h2>
+              <p>Configure feeds, schedules, and subscription tags.</p>
+            </div>
+          </div>
+
+          <div class="pref-grid">
+            <!-- Left panel menu -->
+            <nav class="pref-nav">
+              <button class="pref-nav-btn active"><i class="fa-solid fa-sliders"></i> Feed Configuration</button>
+              <button class="pref-nav-btn"><i class="fa-solid fa-clock"></i> Delivery Settings</button>
+              <button class="pref-nav-btn"><i class="fa-solid fa-envelope"></i> Notifications</button>
+              <button class="pref-nav-btn"><i class="fa-solid fa-user-gear"></i> Account</button>
+            </nav>
+
+            <!-- Active panel panel -->
+            <div class="pref-panel">
+              <div class="pref-section-title">Account Profile</div>
+              <div class="profile-details-card" style="display: flex; gap: 20px; align-items: center; margin-bottom: 32px; background: var(--bg-tertiary); padding: 20px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+                <div class="avatar" style="width: 64px; height: 64px; font-size: 1.5rem; flex-shrink: 0; background: linear-gradient(135deg, var(--primary), #8b5cf6); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; border-radius: 50%;">PR</div>
+                <div class="profile-info">
+                  <h3 style="margin: 0 0 4px 0; font-size: 1.15rem; color: var(--text-primary);">Praveen Ramanan K</h3>
+                  <p style="margin: 0 0 4px 0; font-size: 0.85rem; color: var(--primary); font-weight: 600;">AI & Data Science Student</p>
+                  <p style="margin: 0 0 8px 0; font-size: 0.8rem; color: var(--text-tertiary);"><i class="fa-solid fa-location-dot"></i> Chennai, India</p>
+                  <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">Building AI-powered products and learning every day.</p>
+                </div>
+              </div>
+
+              <div class="pref-section-title">Feed Customizations</div>
+              
+              <div class="pref-row">
+                <label>Favorite Subscriptions</label>
+                <div class="pref-row-desc">Select topics you want included in your morning digests.</div>
+              </div>
+
+              <!-- Tags multi-select -->
+              <div class="interests-selection-grid" id="interests-selection-grid"></div>
+
+              <div class="pref-row">
+                <label>Daily Email Address</label>
+                <input type="email" id="pref-email-addr" placeholder="yourname@domain.com">
+              </div>
+
+              <div class="pref-row">
+                <label>Delivery Time Schedule</label>
+                <select id="pref-delivery-time">
+                  <option value="06:00 AM">06:00 AM</option>
+                  <option value="07:00 AM">07:00 AM</option>
+                  <option value="08:00 AM">08:00 AM</option>
+                  <option value="09:00 AM">09:00 AM</option>
+                </select>
+              </div>
+
+              <div class="pref-row">
+                <label>PDF Layout Style</label>
+                <select id="pref-pdf-style">
+                  <option value="compact">Compact (Double column, minimal spaces)</option>
+                  <option value="full">Detailed (Large type, individual blocks)</option>
+                </select>
+              </div>
+
+              <div class="pref-section-title" style="margin-top: 40px;">System Alerts</div>
+              
+              <div class="toggle-row">
+                <div>
+                  <div style="font-weight: 600; font-size: 0.9rem;">Email Digests</div>
+                  <div class="pref-row-desc">Send automated briefs to email inbox every morning.</div>
+                </div>
+                <label class="toggle-switch">
+                  <input type="checkbox" id="check-email" checked>
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+
+              <div class="toggle-row">
+                <div>
+                  <div style="font-weight: 600; font-size: 0.9rem;">Push Notifications</div>
+                  <div class="pref-row-desc">Send alert notifications on fresh brief synthesis.</div>
+                </div>
+                <label class="toggle-switch">
+                  <input type="checkbox" id="check-push">
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+
+              <div class="toggle-row">
+                <div>
+                  <div style="font-weight: 600; font-size: 0.9rem;">Weekly Analytics Report</div>
+                  <div class="pref-row-desc">Compile visual progress summaries weekly.</div>
+                </div>
+                <label class="toggle-switch">
+                  <input type="checkbox" id="check-weekly" checked>
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+
+              <div style="margin-top: 40px; display: flex; justify-content: flex-end;">
+                <button class="btn btn-primary" id="save-preferences">Save All Changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- ==========================================
+       ARTICLE DETAILS OVERLAY MODAL
+       ========================================== -->
+  <div class="modal-overlay" id="detail-modal-overlay">
+    <div class="detail-modal">
+      <header class="detail-header">
+        <button class="btn-icon" id="modal-close-btn" title="Back to Dashboard">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="detail-header-actions">
+          <button class="btn btn-icon" id="modal-bookmark-action" title="Save to Vault">
+            <i class="fa-regular fa-bookmark"></i>
+          </button>
+          <button class="btn btn-icon" id="modal-share-action" title="Share article link">
+            <i class="fa-solid fa-share-nodes"></i>
+          </button>
+        </div>
+      </header>
+      <div class="detail-content">
+        <!-- Meta Top -->
+        <div class="detail-meta-top">
+          <span class="badge" id="modal-category-badge">Category</span>
+          <span class="importance-dot" id="modal-importance"></span>
+        </div>
+        
+        <!-- Large title -->
+        <h1 class="detail-title" id="modal-title">Article title</h1>
+        
+        <!-- Source + Published date -->
+        <div class="detail-meta-bottom">
+          <span id="modal-author"></span>
+          <span id="modal-date"></span>
+        </div>
+
+        <!-- AI generated summary box -->
+        <div class="ai-summary-box">
+          <div class="ai-summary-header">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <span>AI Generated Summary</span>
+          </div>
+          <p class="ai-summary-body" id="modal-ai-summary">Summary text goes here...</p>
+        </div>
+
+        <!-- Why this matters -->
+        <div class="detail-section">
+          <h3 class="detail-section-title">Why This Matters</h3>
+          <p id="modal-why-matters" style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;"></p>
+        </div>
+
+        <!-- Key Takeaways -->
+        <div class="detail-section">
+          <h3 class="detail-section-title">Key Takeaways</h3>
+          <ul class="takeaways-list" id="modal-takeaways">
+            <li>Takeaway 1</li>
+          </ul>
+        </div>
+
+        <!-- Related Topics -->
+        <div class="detail-section">
+          <h3 class="detail-section-title">Related Topics</h3>
+          <div class="related-topics-container" id="modal-topics"></div>
+        </div>
+
+        <!-- Similar articles -->
+        <div class="detail-section" style="border-top: 1px solid var(--border-color); padding-top: 24px;">
+          <h3 class="detail-section-title">Similar Articles</h3>
+          <div class="similar-grid" id="modal-similar-grid"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       TOAST NOTIFICATION SYSTEM CONTAINER
+       ========================================== -->
+  <div class="toast-container" id="toast-container-box"></div>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
