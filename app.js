@@ -254,7 +254,7 @@ const AppState = {
     deliveryTime: "07:00 AM",
     notifications: { email: true, push: false, weeklyReport: true },
     pdfPreference: "compact",
-    emailAddress: "praveen.ramanan.k@gmail.com"
+    emailAddress: ""
   },
   learnToday: [...LEARN_TODAY_LIST]
 };
