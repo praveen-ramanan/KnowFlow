@@ -2,11 +2,13 @@
 
 > **Knowledge. Curated. Personalized. Every Morning.**
 
-KnowFlow is an AI-powered personal knowledge platform that transforms daily information into actionable insights through personalized briefings, intelligent summaries, and structured knowledge organization.
+KnowFlow is a front-end prototype of a planned AI-powered personal knowledge platform that would transform daily information into actionable insights through personalized briefings, intelligent summaries, and structured knowledge organization.
 
 Instead of browsing multiple websites every morning, KnowFlow aims to collect information from trusted sources, organize it based on your interests, and deliver a clean, personalized reading experience.
 
-> 🚧 **Project Status:** Frontend Prototype (V1)
+> 🚧 **Project Status:** Frontend Prototype (V1), archived
+>
+> All articles, analytics, streaks and recommendations shown in the interface are hardcoded mock data. There is no backend, and none of the planned features below are implemented.
 
 ---
 
